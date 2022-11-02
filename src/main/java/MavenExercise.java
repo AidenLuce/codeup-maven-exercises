@@ -13,8 +13,9 @@ public class MavenExercise {
         boolean check = StringUtils.isNumeric(input);
         if (!check){
             System.out.printf("\"%s\" is not a number\n",input);
-            System.out.printf("Flipped case: %s\n",StringUtils.swapCase(input));
-            System.out.printf("Reversed: %s\n", StringUtils.reverse(input));
+            String flipped = StringUtils.swapCase(input);
+            System.out.printf("Flipped case: %s\n",flipped);
+            System.out.printf("Reversed: %s\n", StringUtils.reverse(flipped));
         }
     }
 }
